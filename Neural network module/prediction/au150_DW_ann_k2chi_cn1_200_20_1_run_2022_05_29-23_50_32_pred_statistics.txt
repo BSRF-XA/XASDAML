@@ -1,0 +1,8 @@
+
+Prediction Info:
+  Pred_maximum             : 13.9060049
+  Pred_minimum             :  2.9471509
+  Pred_mean                :  9.0933819
+  Pred_variance            :  6.5113969
+  Pred_standard deviation  :  2.5517440
+  Pred_median              :  8.2760754
