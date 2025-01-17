@@ -2,19 +2,7 @@
 
 **XASDAML** is a machine learning-based framework designed to streamline the process of X-ray Absorption Spectroscopy (XAS) data analysis. It integrates the entire data-processing workflow—including dataset construction, data filtering, machine learning modeling, prediction, and model evaluation—into a unified platform. With XASDAML, users can efficiently analyze large-scale XAS datasets and gain deeper insights into the relationships between spectral data and material properties.
 
----
-
-## Table of Contents
-1. [Project Structure](#project-structure)
-2. [How to Run](#how-to-run)
-3. [Sample Input and Output](#sample-input-and-output)
-4. [Packaging for Submission](#packaging-for-submission)
-5. [Additional Notes](#additional-notes)
-6. [License](#license)
-
----
-
-XASDAML/
+XASDAML
 ├── Module 1: XAS Spectra Simulation
 ├── Module 2: Structure Descriptor Simulation
 ├── Module 3: Data Reconciliation
