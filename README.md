@@ -96,7 +96,7 @@ pymatgen==2023.8.10
 | 8                 | Dataset division                                          | Block 2           | Spectra (μ, χ, wt) & structure descriptors & index of outliers samples  | Divided dataset (training set, validation set, and test set)                                               |
 | 9                 | Dataset standardization                                   | Block 2           | The divided dataset (training set, validation set, and test set)        | Dataset after normalization or PCA transformation                                                          |
 | 10                | Machine learning modeling                                 | Block 3           | Dataset after normalization or PCA transformation                       | Optimal model & figure of loss curve                                                                        |
-| 11                | Prediction                                               | Block 4           | Optimal model & test set                                                | Prediction of test set                                                                                     |
+| 11                | Prediction                                               | Block 4            | Optimal model & test set                                                | Prediction of test set                                                                                     |
 | 12                | Model performance evaluation                              | Block 4           | Prediction, true labels, and features of test set                       | Statistics table of prediction & true values, evaluation indicators of model & data analysis figures for prediction results |
 
 
