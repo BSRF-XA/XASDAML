@@ -73,6 +73,36 @@ keras==2.9.0
 pydot==3.0.2
 pymatgen==2023.8.10
 
+**Table 1.** Twelve modules in XASDAML, along with their inputs and outputs. All modules are grouped into four blocks and toolkits based on specific functions:  
+- **Block 1**: Dataset Calculation  
+- **Block 2**: Dataset Optimization  
+- **Block 3**: Machine Learning Modeling  
+- **Block 4**: Prediction & Prediction Analysis  
+
+**Abbreviations**:  
+- **CN**: Coordination number of the first shell around the absorber  
+- **CR**: Average bond length of the first shell around the absorber  
+- **RDF**: Radial distribution function  
+
+| **No. of Module** | **Functions**                                             | **No. of Block**  | **Input**                                                              | **Output**                                                                                                 |
+|-------------------|-----------------------------------------------------------|-------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| 1                 | Simulation of XAS                                         | Block 1           | 3D atomic structure of material                                        | Spectra (μ, χ, wt)                                                                                        |
+| 2                 | Simulation of structure descriptors                       | Block 1           | 3D atomic structure of material                                        | Structure descriptors (CR, CN, RDF)                                                                        |
+| 3                 | Data reconciliation                                       | Block 2           | Spectra (μ)                                                             | Spectra after interpolation                                                                                |
+| 4                 | Spectra & structure descriptors plot <br>*Toolkit1*       | *(Toolkit)*       | Spectra (μ, χ, wt) & structure descriptors                              | Figures for spectra (μ, χ, wt) & structure descriptors (RDF)                                               |
+| 5                 | Statistics of structure descriptor <br>*Toolkit2*         | *(Toolkit)*       | Structure descriptors                                                   | Tables for statistical analysis & figures for structure descriptors                                        |
+| 6                 | Data analysis of spectra and structure descriptors <br>*Toolkit3* | *(Toolkit)* | Spectra (μ, χ, wt) & structure descriptors                              | Data analysis figures for spectra with structure descriptors                                               |
+| 7                 | Dataset optimization                                      | Block 2           | Spectra (μ, χ, wt) & structure descriptors                              | Spectra, structure descriptors, and index of outliers’ samples                                             |
+| 8                 | Dataset division                                          | Block 2           | Spectra (μ, χ, wt) & structure descriptors & index of outliers samples  | Divided dataset (training set, validation set, and test set)                                               |
+| 9                 | Dataset standardization                                   | Block 2           | The divided dataset (training set, validation set, and test set)        | Dataset after normalization or PCA transformation                                                          |
+| 10                | Machine learning modeling                                 | Block 3           | Dataset after normalization or PCA transformation                       | Optimal model & figure of loss curve                                                                        |
+| 11                | Prediction                                               | Block 4           | Optimal model & test set                                                | Prediction of test set                                                                                     |
+| 12                | Model performance evaluation                              | Block 4           | Prediction, true labels, and features of test set                       | Statistics table of prediction & true values, evaluation indicators of model & data analysis figures for prediction results |
+
+
+
+
+
 ## Sample Input and Output
 
 ### Input
