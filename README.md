@@ -42,7 +42,8 @@ You may run each module in sequence (from **Module 1** to **Module 12**) as need
    - **Module 1**: XAS Spectra Simulation  
    - **Module 2**: Structure Descriptor Simulation  
    - …  
-   - **Module 12**: Model Performance Evaluation  
+   - **Module 12**: Model Performance Evaluation
+   -* Module 10-1-1 (MLP-R) for regression with MLP, Module 10-1-2 (MLP-C) for classification with MLP, Module 10-2-1 (CNN-R) for regression with CNN, Module 10-2-2 (CNN-C) for classification with CNN, and Module 10-3 (RF-R) for regression with RF.
 
 3. **Obtain Outputs**  
    Each module saves its results in the `results/output/` directory, typically with a timestamped folder for easier tracking.
